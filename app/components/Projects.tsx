@@ -18,7 +18,7 @@ const projects = [
     description:
       "Built a full-stack task management application using the MERN stack. Implemented CRUD operations, REST APIs, MongoDB integration, and deployed the application using Vercel.",
     tech: "MongoDB • Express.js • React • Node.js • REST API",
-    live: "#",
+    live: "https://sudeepshettyportfolio.vercel.app/",
     github: " https://github.com/Sudeepshetty28/Todolist",
   },
 ];
