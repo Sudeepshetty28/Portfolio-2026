@@ -1,0 +1,147 @@
+.skills-section {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 35px;
+  padding-bottom: 120px;
+}
+
+/* ========================= */
+/* HEADING (SKILLS TITLE + UNDERLINE)
+/* ========================= */
+
+.section-title {
+  
+  font-weight: 700;
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* underline effect */
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background: #00e5ff;
+  border-radius: 2px;
+}
+
+/* ========================= */
+/* GRID CONTAINER */
+/* ========================= */
+
+.services {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  background: #0f172a;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+  padding: 25px;
+  width: 380px;       /* Controls card width */
+  min-height: 240px;  /* Controls card height */
+
+  transition: all .4s ease;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* glow effect */
+.service-card::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(
+    rgba(0,229,255,.18),
+    transparent 70%
+  );
+  top: -140px;
+  right: -140px;
+  transition: .5s;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  border-color: #00e5ff;
+  box-shadow: 0 15px 40px rgba(0,229,255,.25);
+}
+
+.service-card:hover::before {
+  transform: scale(1.5);
+}
+
+/* ICON */
+.service-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.service-card h3 {
+  font-size: px;
+  margin: 15px 0;
+  color: #00e5ff;
+  font-weight: 600;
+}
+
+/* ========================= */
+/* PLAIN TEXT SKILLS */
+/* ========================= */
+
+.service-card p {
+  color: #cbd5e1;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 380px;
+
+  white-space: normal;
+  word-spacing: 2px;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 25px;
+  }
+
+  .service-card h3 {
+    font-size: 20px;
+  }
+
+  .service-card p {
+    font-size: 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}

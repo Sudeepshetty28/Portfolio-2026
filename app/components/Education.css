@@ -1,0 +1,124 @@
+.education {
+  min-height: 100vh;
+  background: #050816;
+  color: white;
+  padding: 120px 8%;
+}
+
+/* Title */
+
+.edu-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.edu-title h2 {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.edu-line {
+  width: 90px;
+  height: 4px;
+  margin: 15px auto;
+  background: linear-gradient(90deg, #00e5ff, #2563eb);
+  border-radius: 10px;
+}
+
+/* Timeline Container */
+
+.edu-container {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* vertical line */
+
+.edu-container::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: rgba(0, 229, 255, 0.3);
+}
+
+/* Card */
+
+.edu-card {
+  position: relative;
+  margin-bottom: 60px;
+  padding-left: 70px;
+}
+
+/* Dot */
+
+.edu-dot {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background: #00e5ff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #00e5ff;
+}
+
+/* Content box */
+
+.edu-content {
+  background: #0f172a;
+  padding: 25px 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.edu-content:hover {
+  transform: translateY(-8px);
+  border-color: #00e5ff;
+  box-shadow: 0 0 25px rgba(0,229,255,0.2);
+}
+
+.edu-content h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #00e5ff;
+}
+
+.edu-content h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #e2e8f0;
+}
+
+.edu-content span {
+  font-size: 14px;
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.edu-content p {
+  font-size: 16px;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .edu-container::before {
+    left: 10px;
+  }
+
+  .edu-card {
+    padding-left: 50px;
+  }
+
+  .edu-title h2 {
+    font-size: 40px;
+  }
+}

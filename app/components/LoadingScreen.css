@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  
+  background: #050816;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loading-screen {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #050816;
+
+  transition: opacity 0.8s ease;
+}
+
+.loading-screen.fade-out {
+  opacity: 0;
+}
+
+/* ===========================
+   Loading Card
+=========================== */
+
+.loading-box {
+  position: relative;
+
+  width: 650px;
+  height: 380px;
+
+  background: #0b1120;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  animation: floatCard 4s ease-in-out infinite;
+}
+
+.loading-content {
+  position: absolute;
+
+  inset: 3px;
+
+  background: #0b1120;
+
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  z-index: 2;
+}
+
+/* ===========================
+   Floating Animation
+=========================== */
+
+@keyframes floatCard {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ===========================
+   Animated Border
+=========================== */
+
+.top,
+.right,
+.bottom,
+.left {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, #00e5ff);
+}
+
+.top {
+  top: 0;
+  left: -100%;
+
+  width: 100%;
+  height: 3px;
+
+  animation: topMove 2s linear infinite;
+}
+
+.right {
+  top: -100%;
+  right: 0;
+
+  width: 3px;
+  height: 100%;
+
+  animation: rightMove 2s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.bottom {
+  bottom: 0;
+  right: -100%;
+
+  width: 100%;
+  height: 3px;
+
+  animation: bottomMove 2s linear infinite;
+  animation-delay: 1s;
+}
+
+.left {
+  left: 0;
+  bottom: -100%;
+
+  width: 3px;
+  height: 100%;
+
+  animation: leftMove 2s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes topMove {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes rightMove {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+@keyframes bottomMove {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes leftMove {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+
+/* ===========================
+   Typography
+=========================== */
+
+.loading-content h1 {
+  font-size: 42px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.role {
+  font-size: 20px;
+  color: #9ca3af;
+  margin-bottom: 35px;
+}
+
+/* ===========================
+   Progress Bar
+=========================== */
+
+.progress {
+  width: 75%;
+  height: 12px;
+
+  background: #1f2937;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+
+  border-radius: 30px;
+
+  background: linear-gradient(
+    90deg,
+    #00e5ff,
+    #2979ff,
+    #8e24aa
+  );
+
+  box-shadow:
+    0 0 10px #00e5ff,
+    0 0 20px #2979ff,
+    0 0 35px #8e24aa;
+
+  transition: width 0.1s linear;
+}
+
+/* ===========================
+   Loading Text
+=========================== */
+
+.loading-log {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #00e5ff;
+}
+
+.percentage {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+  .loading-box {
+    width: 90%;
+    height: 320px;
+  }
+
+  .loading-content h1 {
+    font-size: 32px;
+  }
+
+  .role {
+    font-size: 18px;
+  }
+
+  .loading-log {
+    font-size: 16px;
+  }
+
+  .percentage {
+    font-size: 22px;
+  }
+
+  .progress {
+    width: 85%;
+  }
+}
