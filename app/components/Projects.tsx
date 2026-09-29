@@ -9,8 +9,8 @@ const projects = [
     description:
       "Developed a responsive personal portfolio using React, HTML, CSS, and JavaScript. Implemented reusable components, modern UI design, and deployed the project on Vercel with GitHub version control.",
     tech: "React • HTML • CSS • JavaScript • Vercel • GitHub",
-    live: "#",
-    github: "https://github.com/Sudeepshetty28/Portfolio-2026",
+    live: "https://share.google/OidYYm2nopcdwd9ls",
+    github: "https://github.com/Sudeepshetty28/reactportfolio4",
   },
   {
     title: "To-Do List Web Application",
@@ -18,7 +18,7 @@ const projects = [
     description:
       "Built a full-stack task management application using the MERN stack. Implemented CRUD operations, REST APIs, MongoDB integration, and deployed the application using Vercel.",
     tech: "MongoDB • Express.js • React • Node.js • REST API",
-    live: "https://sudeepshettyportfolio.vercel.app/",
+    live: "#",
     github: " https://github.com/Sudeepshetty28/Todolist",
   },
 ];
