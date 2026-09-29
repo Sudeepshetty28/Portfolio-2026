@@ -10,7 +10,7 @@ const projects = [
       "Developed a responsive personal portfolio using React, HTML, CSS, and JavaScript. Implemented reusable components, modern UI design, and deployed the project on Vercel with GitHub version control.",
     tech: "React • HTML • CSS • JavaScript • Vercel • GitHub",
     live: "#",
-    github: " https://github.com/Sudeepshetty28/Portfolio-2026.git",
+    github: "#",
   },
   {
     title: "To-Do List Web Application",
