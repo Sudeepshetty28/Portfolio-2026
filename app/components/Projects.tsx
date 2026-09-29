@@ -5,16 +5,16 @@ import "./Projects.css";
 const projects = [
   {
     title: "React Portfolio Website",
-    year: "2024 – 2025",
+    year: "2025 – 2026",
     description:
       "Developed a responsive personal portfolio using React, HTML, CSS, and JavaScript. Implemented reusable components, modern UI design, and deployed the project on Vercel with GitHub version control.",
     tech: "React • HTML • CSS • JavaScript • Vercel • GitHub",
     live: "#",
-    github: "#",
+    github: " https://github.com/Sudeepshetty28/Portfolio-2026.git",
   },
   {
     title: "To-Do List Web Application",
-    year: "2025 – 2026",
+    year: "2024 – 2025",
     description:
       "Built a full-stack task management application using the MERN stack. Implemented CRUD operations, REST APIs, MongoDB integration, and deployed the application using Vercel.",
     tech: "MongoDB • Express.js • React • Node.js • REST API",
