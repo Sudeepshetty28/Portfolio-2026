@@ -9,7 +9,7 @@ const projects = [
     description:
       "Developed a responsive personal portfolio using Next.js, HTML, CSS, and JavaScript. Implemented reusable components, modern UI design, and deployed the project on Vercel with GitHub version control.",
     tech: "Next.js • HTML • CSS • JavaScript • Vercel • GitHub",
-    github: "#",
+
   },
   {
     title: "Bookmark Service Web Application",
@@ -21,9 +21,7 @@ const projects = [
 
     tech: "React • Java • Spring Boot • Spring Data JPA • H2 • REST API",
 
-    
-
-    github: "#",
+  
   },
 ];
 
@@ -49,9 +47,7 @@ export default function Projects() {
               </div>
 
 
-                <a href={project.github} target="_blank">
-                  💻 GitHub
-                </a>
+               
               
             </div>
           ))}
